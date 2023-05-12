@@ -15,24 +15,29 @@ export const FormationResult: React.FC<{}> = () => {
           A l'issue de cette formation :<br />
           <ul>
             <li>
-              Vous connaîtrez parfaitement toute la théorie qui soutient la
-              Clean Architecture
+              <b>Vous connaîtrez parfaitement toute la théorie</b> qui soutient
+              la Clean Architecture
             </li>
             <li>
-              Vous saurez discuter avec d'autres développeurs & architectes
-              logiciels
+              Vous saurez <b>discuter avec d'autres développeurs</b> &
+              architectes logiciels
             </li>
             <li>
-              Vous serez capable de développer des logiciels en Clean
-              Architecture en partant de zéro, peu importe la technologie
+              Vous serez{" "}
+              <b>capable de développer des logiciels en Clean Architecture</b>{" "}
+              en partant de zéro, peu importe la technologie
             </li>
             <li>
-              Vous ne confondrez plus jamais Architecture Hexagonale & Clean
-              Architecture
+              Vous ne confondrez plus jamais{" "}
+              <b>Architecture Hexagonale & Clean Architecture</b>
             </li>
             <li>
-              Vous aurez acquis des fondations qui sont indépendantes de tout
-              langage de programmation et qui vous seront utiles toute votre vie
+              Vous aurez acquis{" "}
+              <b>
+                des fondations qui sont indépendantes de tout langage de
+                programmation{" "}
+              </b>
+              et qui vous seront utiles toute votre vie
             </li>
           </ul>
         </Paragraph>

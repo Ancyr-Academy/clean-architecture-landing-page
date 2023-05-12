@@ -49,7 +49,7 @@ export const Included: React.FC<{}> = () => {
                 {" "}
                 <Price>249€ TTC</Price>
                 <br />
-                Jusqu'au 19/05
+                Jusqu'au 21/05
               </b>
             </JoinParagraph>
             <JoinButton href={getCourseURL()}>

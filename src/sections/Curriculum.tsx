@@ -13,37 +13,43 @@ export const Curriculum: React.FC<{}> = () => {
         <Block>
           <SubTitle>Les paradigmes de programmation</SubTitle>
           <Paragraph>
-            Nous verrons ensemble quels sont les 3 paradigmes de programmation,
-            leur historique et leur intérêt dans la création de logiciels
-            robustes.
+            Nous verrons ensemble quels sont les{" "}
+            <b>3 paradigmes de programmation</b>, leur historique et leur
+            intérêt dans la création de logiciels robustes.
           </Paragraph>
         </Block>
 
         <Block>
           <SubTitle>Les Principes SOLID</SubTitle>
           <Paragraph>
-            Nous étudierons les principes SOLID avec des exemples concrets de
-            violations et de solutions à ces principes afin de renforcer notre
-            conscience des failles qui peuvent gangréner nos systèmes.
+            Nous étudierons les principes SOLID avec{" "}
+            <b>des exemples concrets de violations et de solutions</b> à ces
+            principes afin de renforcer notre conscience des failles qui peuvent
+            gangréner nos systèmes.
           </Paragraph>
         </Block>
         <Block>
           <SubTitle>La théorie des composants & partitions de système</SubTitle>
           <Paragraph>
-            L'une des parties les plus lourdes concerne les différentes façons
-            de décomposer nos systèmes en sous-modules, les forces et faiblesses
-            de ces formes de partitions et les propriétés concernant le couplage
-            et la cohésion des composants
+            L'une des parties les plus lourdes concerne{" "}
+            <b>
+              les différentes façons de décomposer nos systèmes en sous-modules
+            </b>
+            , les forces et faiblesses de ces formes de partitions et les
+            propriétés concernant le couplage et la cohésion des composants
           </Paragraph>
         </Block>
         <Block>
           <SubTitle>Les dépendances</SubTitle>
           <Paragraph>
-            Sujet majeur de toute forme d'architecture, nous étudierons les
-            dépendances avec des notions théoriques concrètes sur les différents
-            types de dépendances et leur méthodes d'injection, puis nous verrons
-            en quoi l'injection de dépendance est vitale pour la Clean
-            Architecture.
+            Sujet majeur de toute forme d'architecture, nous étudierons{" "}
+            <b>les dépendances</b> avec des notions théoriques concrètes sur les
+            différents types de dépendances et leur méthodes d'injection, puis
+            nous verrons{" "}
+            <b>
+              en quoi l'injection de dépendance est vitale pour la Clean
+              Architecture.
+            </b>
           </Paragraph>
         </Block>
         <Block>
@@ -59,12 +65,17 @@ export const Curriculum: React.FC<{}> = () => {
         <Block>
           <SubTitle>Mise en pratique : application full-stack</SubTitle>
           <Paragraph>
-            Nous développerons ensemble une application Full-stack en TypeScript
-            avec NestJS et NextJS en TDD afin de mettre en pratique tout ce que
-            nous aurons vu au cours des chapitres théoriques précédents. A
-            l'issue de cette formation, vous saurez parfaitement mettre en place
-            une Clean Architecture en toute indépendance et sans aucune question
-            en suspens.
+            Nous développerons ensemble{" "}
+            <b>
+              une application Full-stack en TypeScript avec NestJS et NextJS en
+              TDD
+            </b>{" "}
+            afin de mettre en pratique tout ce que nous aurons vu au cours des
+            chapitres théoriques précédents. A l'issue de cette formation,{" "}
+            <b>
+              vous saurez parfaitement mettre en place une Clean Architecture
+            </b>{" "}
+            en toute indépendance et sans aucune question en suspens.
           </Paragraph>
         </Block>
       </Container>

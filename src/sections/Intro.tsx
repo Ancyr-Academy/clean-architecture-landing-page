@@ -39,20 +39,27 @@ export const Intro: React.FC<{}> = () => {
           <Title>Une formation complète et accessible</Title>
           <Paragraph>
             Les ressources permettant de se former sur la Clean Architecture
-            sont rares, souvent difficiles à comprendre et ont un contexte très
-            différent de celui des applications que l'on développe au quotidien.
+            sont rares, souvent <b>difficiles à comprendre</b> et ont un
+            contexte très différent de celui des applications que l'on développe
+            au quotidien.
             <br />
             <br />
             De ce constat est né cette formation :<br />
             <ul>
               <li>
-                Un cours comprenant toute la théorie de la Clean Architecture
+                Un cours comprenant{" "}
+                <b>toute la théorie de la Clean Architecture</b>
               </li>
-              <li>Recentré sur le contexte des applications actuelles</li>
               <li>
-                Appuyé sur des schémas et exemples de code clair et concis
+                Recentré sur le contexte des <b>applications actuelles</b>
               </li>
-              <li>Avec des définitions simples et sans fioritures</li>
+              <li>
+                Appuyé par des{" "}
+                <b>schémas et exemples de code clair et concis</b>
+              </li>
+              <li>
+                Avec des <b>définitions simples et sans fioritures</b>
+              </li>
             </ul>
           </Paragraph>
         </Container>
