@@ -9,8 +9,9 @@ const sourceSansPro = Source_Sans_Pro({
 });
 
 export const metadata = {
-  title: "Formation Clean Architecture",
-  description: "Formation Clean Architecture",
+  title: "Formation à la Clean Architecture - Ancyr Academy",
+  description:
+    "Apprenez à développer des applications robustes et maintenables avec la Clean Architecture à travers une formation complète et accessible. Au programme : paradigmes de programmation, principes SOLID, théorie des composants, architecture logicielles et mise en pratique sur des applications full-stack.",
 };
 
 export default function RootLayout({

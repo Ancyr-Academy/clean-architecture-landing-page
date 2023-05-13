@@ -37,8 +37,8 @@ export const Included: React.FC<{}> = () => {
           <JoinColumn>
             <JoinTitle>Paiement possible en 3x sans frais</JoinTitle>
             <JoinParagraph>
-              <b>Remboursé sans questions</b> si le contenu vous plait pas (30
-              jours après l'achat au plus tard). <br />
+              <b>Remboursé sans questions</b> si le contenu ne vous plait pas
+              (30 jours après l'achat au plus tard). <br />
               <br />
               <b>Prix Early Bird</b>
               <br />

@@ -32,10 +32,10 @@ export const Methodology: React.FC<{}> = () => {
           <TextColumn>
             <SubTitle>Une démonstration par le code</SubTitle>
             <Paragraph>
-              Lorsque possible, <b>je fais une démonstration de code</b>, par
+              Dés que possible, <b>je fais une démonstration de code</b>, par
               exemple pour montrer des exemples de violations et de solutions
-              dans le cadre des principes SOLID, cela afin d'accompagner la
-              théorie d'application concrètes.
+              dans le cadre des principes SOLID afin d'accompagner la théorie
+              d'application concrètes.
             </Paragraph>
           </TextColumn>
           <ImageColumn>
@@ -48,7 +48,7 @@ export const Methodology: React.FC<{}> = () => {
             <Paragraph>
               Je suis très actif sur Discord et{" "}
               <b>élabore la formation en collaboration avec les élèves</b> qui
-              me posent régulièrement des questions et auxquels je tente de
+              me posent régulièrement des questions auxquelles je tente de
               répondre directement à l'intérieur de la formation pour en faire
               profiter le plus grand nombre.
             </Paragraph>

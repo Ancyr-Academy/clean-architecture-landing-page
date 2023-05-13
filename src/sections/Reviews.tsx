@@ -14,16 +14,16 @@ export const Reviews: React.FC<{}> = () => {
         <Rows>
           <Review>
             <Paragraph>
-              J'ai suivie récemment la formation clean archi que propose
-              Anthony. Si je devais donner trois mots pour la définir, cela
-              serait : <b>Clarté, Pédagogie et Pratique</b>. Anthony a une façon
-              unique de rendre les concepts parfois abstraits simples et
+              J'ai suivi récemment la formation sur la Clean Archiecture que
+              propose Anthony. Si je devais donner trois mots pour la définir,
+              ce serait : <b>Clarté, Pédagogie et Pratique</b>. Anthony a une
+              façon unique de rendre les concepts parfois abstraits, simples et
               accessibles. Il utilise de nombreux schémas et fournit des
               exemples concrets, ce qui permet de bien visualiser les concepts
               et de comprendre leur application pratique.{" "}
               <b>
                 Sa pédagogie est vraiment efficace et il est toujours disponible
-                pour répondre à toutes les questions.
+                pour répondre à toutes nos questions.
               </b>
               La partie théorique de la formation a grandement facilité mon
               apprentissage et m'a permis de progresser de manière
