@@ -3,7 +3,7 @@
 import React from "react";
 import { styled } from "styled-components";
 import { Container } from "@/components/Container";
-import { Paragraph, Title } from "../components/Typography";
+import { Paragraph, Title, UnorderedList } from "../components/Typography";
 
 export const Intro: React.FC<{}> = () => {
   return (
@@ -45,23 +45,22 @@ export const Intro: React.FC<{}> = () => {
             <br />
             <br />
             De ce constat est né cette formation :<br />
-            <ul>
-              <li>
-                Un cours comprenant{" "}
-                <b>toute la théorie de la Clean Architecture</b>
-              </li>
-              <li>
-                Recentré sur le contexte des <b>applications actuelles</b>
-              </li>
-              <li>
-                Appuyé par des{" "}
-                <b>schémas et exemples de code clair et concis</b>
-              </li>
-              <li>
-                Avec des <b>définitions simples et sans fioritures</b>
-              </li>
-            </ul>
           </Paragraph>
+          <UnorderedList>
+            <li>
+              Un cours comprenant{" "}
+              <b>toute la théorie de la Clean Architecture</b>
+            </li>
+            <li>
+              Recentré sur le contexte des <b>applications actuelles</b>
+            </li>
+            <li>
+              Appuyé par des <b>schémas et exemples de code clair et concis</b>
+            </li>
+            <li>
+              Avec des <b>définitions simples et sans fioritures</b>
+            </li>
+          </UnorderedList>
         </Container>
       </Block>
     </View>

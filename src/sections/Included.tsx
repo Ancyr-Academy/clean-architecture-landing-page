@@ -6,6 +6,7 @@ import { Container } from "../components/Container";
 import { Paragraph } from "../components/Typography";
 import { getCourseURL } from "../../lib/app";
 import { breakpoints, mediaQuery } from "../../lib/global-styles";
+import { UnorderedList } from "@/components/Typography";
 
 export const Included: React.FC<{}> = () => {
   return (
@@ -16,23 +17,23 @@ export const Included: React.FC<{}> = () => {
             <SubTitle>Inclus dans cette formation</SubTitle>
             <Paragraph>
               En achetant cette formation, vous obtenez :<br />
-              <ul>
-                <li>Un accès à vie à la formation</li>
-                <li>
-                  Des mises à jour gratuites qui viendront étoffer ou clarifier
-                  certaines parties du cours
-                </li>
-                <li>
-                  Un accès privé au canal Discord dans lequel vous pourrez
-                  échanger avec les autres élèves et moi-même
-                </li>
-                <li>
-                  Des invitations à des sessions vocales privées avec les autres
-                  élèves et moi-même
-                </li>
-                <li>Un accès anticipé à mes futures formations</li>
-              </ul>
             </Paragraph>
+            <UnorderedList style={{ color: "white" }}>
+              <li>Un accès à vie à la formation</li>
+              <li>
+                Des mises à jour gratuites qui viendront étoffer ou clarifier
+                certaines parties du cours
+              </li>
+              <li>
+                Un accès privé au canal Discord dans lequel vous pourrez
+                échanger avec les autres élèves et moi-même
+              </li>
+              <li>
+                Des invitations à des sessions vocales privées avec les autres
+                élèves et moi-même
+              </li>
+              <li>Un accès anticipé à mes futures formations</li>
+            </UnorderedList>
           </TextColumn>
           <JoinColumn>
             <JoinTitle>Paiement possible en 3x sans frais</JoinTitle>
