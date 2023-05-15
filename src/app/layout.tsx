@@ -23,8 +23,12 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={sourceSansPro.className}>
-        <GlobalStyles />
-        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        <StyledComponentsRegistry>
+          <div>
+            <GlobalStyles />
+            {children}
+          </div>
+        </StyledComponentsRegistry>
       </body>
     </html>
   );

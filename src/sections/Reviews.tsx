@@ -67,6 +67,21 @@ export const Reviews: React.FC<{}> = () => {
 
             <ProfilePicture url={"/images/flaviomoreno.jpeg"} />
           </Review>
+          <Review>
+            <Paragraph>
+              Une première partie théorique qui reprend l'ensemble des principes
+              de la Clean Architecture, principes SOLID, composants et
+              architecture. <b> Les explications sont clairs</b> et il ne fait
+              pas de doute que Anthony maitrise son sujet et que la partie
+              pratique saura mettre en avant les différents concepts abordés
+              lors de la formation.
+            </Paragraph>
+            <Author href="https://www.linkedin.com/in/theode/" target="_blank">
+              Théo Depelsemacker
+            </Author>
+
+            <ProfilePicture url={"/images/theodepelsmacker.jpeg"} />
+          </Review>
         </Rows>
       </Container>
     </View>
