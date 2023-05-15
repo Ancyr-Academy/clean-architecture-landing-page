@@ -19,7 +19,7 @@ export const FAQ: React.FC<{}> = () => {
             </Question>
             <Answer>
               Oui. L'objectif est de vous enseigner la Clean Architecture, peu
-              importe l'environnement du logiciel. A l'issue de la formation,
+              importe l'environnement du logiciel. A l'issue de cette formation,
               nous aurons vu un exemple concret de mise en application. Nous
               allons coder une application front-end en ReactJS, de A à Z.
             </Answer>
@@ -30,19 +30,20 @@ export const FAQ: React.FC<{}> = () => {
             </Question>
             <Answer>
               Il existe plusieurs formations en France qui traitent de près ou
-              de loin à la Clean Architecture, mais aucune ne s'y prête de façon
-              simple, concise, compréhensible et complète comme je le fais.
-              C'est une promesse lourde de sens car j'en ai, moi-même, essayé
-              plusieurs. C'est d'ailleurs la raison pour laquelle j'ai décidé de
-              créer une formation 100% dédiée à la Clean Architecture, en
-              pratique, dans un environnement TypeScript.
+              de loin à la Clean Architecture, mais aucune ne se dédie à 100% à
+              la Clean Architecture. C'est la raison pour laquelle j'ai décidé
+              de créer une formation 100% dédiée à la Clean Architecture, en
+              pratique, dans un environnement TypeScript avec des outils comme
+              NestJS & React.
             </Answer>
           </QuestionBlock>
           <QuestionBlock>
             <Question>
               Puis-je utiliser mon crédit CPF pour me fournir cette formation ?
             </Question>
-            <Answer>A l'heure qu'il est, cela n'est pas possible.</Answer>
+            <Answer>
+              A l'heure actuelle, <b>cela n'est pas possible</b>.
+            </Answer>
           </QuestionBlock>
           <QuestionBlock>
             <Question>
@@ -50,8 +51,11 @@ export const FAQ: React.FC<{}> = () => {
               formation ?
             </Question>
             <Answer>
-              Je serai disponible personnellement pour répondre à vos questions
-              sur mon Discord, une communauté qui rassemble plus de 400
+              <b>
+                Je serai disponible personnellement pour répondre à vos
+                questions
+              </b>
+              sur mon Discord, une communauté qui rassemble plus de 450
               développeurs sensibilisés à la qualité dans l'ingénierie
               logicielle.
             </Answer>
@@ -59,10 +63,11 @@ export const FAQ: React.FC<{}> = () => {
           <QuestionBlock>
             <Question>La formation est-elle terminée ? </Question>
             <Answer>
-              Pour l'heure, la première partie contenant toute la théorie de la
-              Clean Architecture est terminée. La seconde partie sur la création
-              d'une application back-end est en cours, et sera suivie d'une
-              troisième partie sur la création d'une application front-end.
+              Pour l'heure, <b>seule la première partie</b> contenant toute la
+              théorie de la Clean Architecture <b>est terminée</b>. La seconde
+              partie sur la création d'une application back-end est en cours, et
+              sera suivie d'une troisième partie sur la création d'une
+              application front-end.
             </Answer>
           </QuestionBlock>
         </Rows>
