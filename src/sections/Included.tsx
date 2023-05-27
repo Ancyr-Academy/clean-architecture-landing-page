@@ -15,7 +15,7 @@ export const Included: React.FC<{}> = () => {
         <Rows>
           <TextColumn>
             <SubTitle>Inclus dans cette formation</SubTitle>
-            <Paragraph>
+            <Paragraph style={{ color: "white" }}>
               En achetant cette formation, vous obtenez :<br />
             </Paragraph>
             <UnorderedList style={{ color: "white" }}>
@@ -43,7 +43,7 @@ export const Included: React.FC<{}> = () => {
               <br />
               <b>Prix Early Bird</b>
               <br />
-              <s>349€ TTC</s>
+              <s>690€ TTC</s>
               <br />
               <br />
               <b>
