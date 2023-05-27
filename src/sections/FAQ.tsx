@@ -53,7 +53,7 @@ export const FAQ: React.FC<{}> = () => {
             <Answer>
               <b>
                 Je serai disponible personnellement pour répondre à vos
-                questions
+                questions{" "}
               </b>
               sur mon Discord, une communauté qui rassemble plus de 450
               développeurs sensibilisés à la qualité dans l'ingénierie

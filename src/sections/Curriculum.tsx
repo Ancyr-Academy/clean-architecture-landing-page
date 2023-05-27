@@ -63,7 +63,7 @@ export const Curriculum: React.FC<{}> = () => {
           </Paragraph>
         </Block>
         <Block>
-          <SubTitle>Mise en pratique : application full-stack</SubTitle>
+          <SubTitle>BONUS : application full-stack</SubTitle>
           <Paragraph>
             Nous développerons ensemble{" "}
             <b>
