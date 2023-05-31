@@ -41,14 +41,14 @@ export const Included: React.FC<{}> = () => {
               <b>Remboursé sans questions</b> si le contenu ne vous plait pas
               (30 jours après l'achat au plus tard). <br />
               <br />
-              {/* <b>Prix Early Bird</b>
+              <b>Accès Anticipé</b>
               <br />
               <s>690€ TTC</s>
               <br />
-              <br /> */}
+              <br />
               <b>
                 {" "}
-                <Price>690€ TTC</Price>
+                <Price>345€ TTC</Price>
                 {/* <br />
                 Jusqu'au 28/05 */}
               </b>

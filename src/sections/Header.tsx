@@ -12,12 +12,12 @@ export const Header: React.FC<{}> = () => {
           Des Applications Robustes avec la <b>Clean Architecture</b>
         </Text>
 
-        {/* <EarlyBird>
-          <h6>Early Bird</h6>
+        <EarlyBird>
+          <h6>Accès Anticipé</h6>
           <p>
-            249€ au lieu de <s>690€</s> Jusqu'au <b>28/05</b>
+            345€ au lieu de <s>690€</s>
           </p>
-        </EarlyBird> */}
+        </EarlyBird>
       </Content>
     </View>
   );
