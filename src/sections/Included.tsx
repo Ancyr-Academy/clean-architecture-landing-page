@@ -36,21 +36,21 @@ export const Included: React.FC<{}> = () => {
             </UnorderedList>
           </TextColumn>
           <JoinColumn>
-            <JoinTitle>Paiement possible en 3x sans frais</JoinTitle>
+            <JoinTitle>Paiement possible en 3x & 6x sans frais</JoinTitle>
             <JoinParagraph>
               <b>Remboursé sans questions</b> si le contenu ne vous plait pas
               (30 jours après l'achat au plus tard). <br />
               <br />
-              <b>Prix Early Bird</b>
+              {/* <b>Prix Early Bird</b>
               <br />
               <s>690€ TTC</s>
               <br />
-              <br />
+              <br /> */}
               <b>
                 {" "}
-                <Price>249€ TTC</Price>
-                <br />
-                Jusqu'au 28/05
+                <Price>690€ TTC</Price>
+                {/* <br />
+                Jusqu'au 28/05 */}
               </b>
             </JoinParagraph>
             <JoinButton href={getCourseURL()}>
