@@ -27,14 +27,12 @@ export const Reviews: React.FC<{}> = () => {
               </b>
               La partie théorique de la formation a grandement facilité mon
               apprentissage et m'a permis de progresser de manière
-              significative. C'est pourquoi je recommande vivement cette
-              formation à toute personne souhaitant approfondir sa compréhension
-              de l'architecture logicielle d'autant plus que{" "}
+              significative. C'est pourquoi{" "}
               <b>
-                la suite promet d'être un véritable "game changer" pour la suite
-                de ma carrière
-              </b>{" "}
-              et cela pourrait bien être votre cas aussi !
+                je recommande vivement cette formation à toute personne
+                souhaitant approfondir sa compréhension de l'architecture
+                logicielle !
+              </b>
             </Paragraph>
             <Author
               href="https://www.linkedin.com/in/melainadonati/"
@@ -72,9 +70,7 @@ export const Reviews: React.FC<{}> = () => {
               Une première partie théorique qui reprend l'ensemble des principes
               de la Clean Architecture, principes SOLID, composants et
               architecture. <b> Les explications sont clairs</b> et il ne fait
-              pas de doute que Anthony maitrise son sujet et que la partie
-              pratique saura mettre en avant les différents concepts abordés
-              lors de la formation.
+              pas de doute que Anthony maitrise son sujet.
             </Paragraph>
             <Author href="https://www.linkedin.com/in/theode/" target="_blank">
               Théo Depelsemacker
