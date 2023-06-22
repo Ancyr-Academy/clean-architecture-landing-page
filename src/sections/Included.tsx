@@ -43,12 +43,12 @@ export const Included: React.FC<{}> = () => {
               <br />
               <b>Accès Anticipé</b>
               <br />
-              <s>690€ TTC</s>
+              <s>830€ TTC</s>
               <br />
               <br />
               <b>
                 {" "}
-                <Price>345€ TTC</Price>
+                <Price>250€ TTC</Price>
                 {/* <br />
                 Jusqu'au 28/05 */}
               </b>

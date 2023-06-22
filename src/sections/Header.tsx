@@ -15,7 +15,7 @@ export const Header: React.FC<{}> = () => {
         <EarlyBird>
           <h6>Accès Anticipé</h6>
           <p>
-            345€ au lieu de <s>690€</s>
+            250€ au lieu de <s>830€</s>
           </p>
         </EarlyBird>
       </Content>
