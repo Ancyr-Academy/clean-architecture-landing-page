@@ -34,7 +34,7 @@ export const FAQ: React.FC<{}> = () => {
               la Clean Architecture. C'est la raison pour laquelle j'ai décidé
               de créer une formation 100% dédiée à la Clean Architecture, en
               pratique, dans un environnement TypeScript avec des outils comme
-              NestJS & React.
+              NodeJS & React.
             </Answer>
           </QuestionBlock>
           <QuestionBlock>
@@ -63,11 +63,11 @@ export const FAQ: React.FC<{}> = () => {
           <QuestionBlock>
             <Question>La formation est-elle terminée ? </Question>
             <Answer>
-              Pour l'heure, <b>seule la première partie</b> contenant toute la
-              théorie de la Clean Architecture <b>est terminée</b>. La seconde
-              partie sur la création d'une application back-end est en cours, et
-              sera suivie d'une troisième partie sur la création d'une
-              application front-end.
+              Pour l'heure, la première partie{" "}
+              <b>Théorie de la Clean Architecture</b> et la seconde partie{" "}
+              <b>Développer une application avec NextJS</b> sont disponibles.
+              Une troisième partie <b>Développer une application avec NestJS</b>{" "}
+              est en cours de création.
             </Answer>
           </QuestionBlock>
         </Rows>
