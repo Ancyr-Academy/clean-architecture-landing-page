@@ -19,20 +19,24 @@ export const Included: React.FC<{}> = () => {
               En achetant cette formation, vous obtenez :<br />
             </Paragraph>
             <UnorderedList style={{ color: "white" }}>
-              <li>Un accès à vie à la formation</li>
               <li>
-                Des mises à jour gratuites qui viendront étoffer ou clarifier
-                certaines parties du cours
+                Un <b>accès à vie</b> à la formation
               </li>
               <li>
-                Un accès privé au canal Discord dans lequel vous pourrez
+                Des <b>mises à jour gratuites</b> qui viendront étoffer ou
+                clarifier certaines parties du cours
+              </li>
+              <li>
+                Un <b> accès privé au canal Discord</b> dans lequel vous pourrez
                 échanger avec les autres élèves et moi-même
               </li>
               <li>
-                Des invitations à des sessions vocales privées avec les autres
-                élèves et moi-même
+                Des invitations à des <b>sessions vocales privées</b> avec les
+                autres élèves et moi-même
               </li>
-              <li>Un accès anticipé à mes futures formations</li>
+              <li>
+                Un <b>accès anticipé</b> à mes futures formations
+              </li>
             </UnorderedList>
           </TextColumn>
           <JoinColumn>
@@ -41,15 +45,15 @@ export const Included: React.FC<{}> = () => {
               <b>Remboursé sans questions</b> si le contenu ne vous plait pas
               (30 jours après l'achat au plus tard). <br />
               <br />
-              <b>Accès Anticipé</b>
-              <br />
-              <s>830€ TTC</s>
+              <b>La promotion prend bientôt fin !</b>
               <br />
               <br />
               <b>
                 {" "}
                 <Price>250€ TTC</Price>
               </b>
+              <br />
+              <i>Au lieu de 830€, soit -70%</i>
             </JoinParagraph>
             <JoinButton href={getCourseURL()}>
               J'accède à la formation

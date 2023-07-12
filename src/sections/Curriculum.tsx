@@ -63,19 +63,27 @@ export const Curriculum: React.FC<{}> = () => {
           </Paragraph>
         </Block>
         <Block>
-          <SubTitle>BONUS : application full-stack</SubTitle>
+          <SubTitle>Pratique : application ReactJS</SubTitle>
           <Paragraph>
             Nous développerons ensemble{" "}
+            <b>une application React en TypeScript avec NextJS en TDD</b> pour
+            mettre en pratique la connaissance théorique au front. Vous ne
+            développerez plus jamais des applications React comme avant et
+            saurez parfaitement architecturer vos futures applications
+            front-end, peu importe le framework.
+          </Paragraph>
+        </Block>
+        <Block>
+          <SubTitle>Pratique : application ReactJS</SubTitle>
+          <Paragraph>
+            Nous développerons ensemble{" "}
+            <b>une application NestJS / TypeScript en TDD</b> reprenant les
+            règles métiers d'une application réelle afin de développer une API
+            en Clean Architecture déployable en production.{" "}
             <b>
-              une application Full-stack en TypeScript avec NestJS et NextJS en
-              TDD
-            </b>{" "}
-            afin de mettre en pratique tout ce que nous aurons vu au cours des
-            chapitres théoriques précédents. A l'issue de cette formation,{" "}
-            <b>
-              vous saurez parfaitement mettre en place une Clean Architecture
-            </b>{" "}
-            en toute indépendance et sans aucune question en suspens.
+              Vous découvrirez une facette du développement back-end que vous
+              n'auriez certainement jamais soupçonnée.
+            </b>
           </Paragraph>
         </Block>
       </Container>

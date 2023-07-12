@@ -31,8 +31,9 @@ export const FAQ: React.FC<{}> = () => {
             <Answer>
               Il existe plusieurs formations en France qui traitent de près ou
               de loin à la Clean Architecture, mais aucune ne se dédie à 100% à
-              la Clean Architecture. C'est la raison pour laquelle j'ai décidé
-              de créer une formation 100% dédiée à la Clean Architecture, en
+              la Clean Architecture.
+              <br /> C'est la raison pour laquelle j'ai décidé de créer{" "}
+              <b>une formation 100% dédiée à la Clean Architecture</b>, en
               pratique, dans un environnement TypeScript avec des outils comme
               NodeJS & React.
             </Answer>
@@ -58,16 +59,6 @@ export const FAQ: React.FC<{}> = () => {
               sur mon Discord, une communauté qui rassemble plus de 450
               développeurs sensibilisés à la qualité dans l'ingénierie
               logicielle.
-            </Answer>
-          </QuestionBlock>
-          <QuestionBlock>
-            <Question>La formation est-elle terminée ? </Question>
-            <Answer>
-              Pour l'heure, la première partie{" "}
-              <b>Théorie de la Clean Architecture</b> et la seconde partie{" "}
-              <b>Développer une application avec NextJS</b> sont disponibles.
-              Une troisième partie <b>Développer une application avec NestJS</b>{" "}
-              est en cours de création.
             </Answer>
           </QuestionBlock>
         </Rows>

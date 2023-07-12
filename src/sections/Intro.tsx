@@ -23,14 +23,22 @@ export const Intro: React.FC<{}> = () => {
             <b>flexibilité du système. </b>
             <br />
             <br />
-            Elle s'appuie sur la fameuse <b>Architecture Hexagonale</b> mais
-            l'enrichit en proposant une structure plus détaillée qui s'articule
-            autour des <b>Use Cases</b> qui représentent les fonctionnalités de
-            l'application.
+            Elle offre un <b>ensemble de guidelines</b> pour architecturer son
+            application de sorte à faire{" "}
+            <b>émerger le besoin auquel le code répond</b>, à
+            <b>rendre le code testable de fond en comble</b> et à permettre aux
+            développeurs d'ajouter des fonctionnalités continuellement{" "}
+            <b>sans trainer une dette technique douloureuse.</b>
             <br />
             <br />
-            La Clean Architecture promet donc de{" "}
-            <b>réduire durablement l'entropie logicielle.</b>
+            La Clean Architecture promet de{" "}
+            <b>réduire durablement l'entropie logicielle.</b> et d'être dans une
+            dynamique véritablement agile dans laquelle les bugs sont rares et
+            les développeurs passent leur temps à s'amuser à ajouter de
+            nouvelles fonctionnalités.
+            <br />
+            <br />
+            C'est votre patron qui va être content.
           </Paragraph>
         </Container>
       </Block>
@@ -49,7 +57,8 @@ export const Intro: React.FC<{}> = () => {
           <UnorderedList>
             <li>
               Un cours comprenant{" "}
-              <b>toute la théorie de la Clean Architecture</b>
+              <b>toute la théorie de la Clean Architecture</b> dans ses moindres
+              détails
             </li>
             <li>
               Recentré sur le contexte des <b>applications actuelles</b>
@@ -59,6 +68,10 @@ export const Intro: React.FC<{}> = () => {
             </li>
             <li>
               Avec des <b>définitions simples et sans fioritures</b>
+            </li>
+            <li>
+              Et une mise en pratique à travers{" "}
+              <b>le développement de véritables applications</b>
             </li>
           </UnorderedList>
         </Container>

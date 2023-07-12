@@ -41,6 +41,11 @@ export const FormationResult: React.FC<{}> = () => {
             </b>
             et qui vous seront utiles toute votre vie
           </li>
+          <li>
+            Vous aurez acquis une façon de travailler{" "}
+            <b>aux antipodes de vos pratiques actuelles</b> et de celles qui se
+            font dans votre entreprise.
+          </li>
         </UnorderedList>
       </Container>
     </View>
