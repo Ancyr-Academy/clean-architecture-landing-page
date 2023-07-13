@@ -77,6 +77,25 @@ export const Reviews: React.FC<{}> = () => {
 
             <ProfilePicture url={"/images/theodepelsmacker.jpeg"} />
           </Review>
+          <Review>
+            <Paragraph>
+              Je conseil fortement la formation d'Anthony.{" "}
+              <b>Elle convient a tous, debutant et confirmé</b>. Anthony prend
+              le temps d'expliquer toute la theorie autour de la clean
+              architecture pour ensuite nous plonger dans une etude de cas avec
+              react et next. De plus le contenu est mis a jour en fonction des
+              remarques faites par les membres de la formation.{" "}
+              <b>Je recommande a 100% !</b>
+            </Paragraph>
+            <Author
+              href="https://www.linkedin.com/in/yazid-daoudi/"
+              target="_blank"
+            >
+              Yazid Daoudi
+            </Author>
+
+            <ProfilePicture url={"/images/yaziddaoudi.jpeg"} />
+          </Review>
         </Rows>
       </Container>
     </View>
