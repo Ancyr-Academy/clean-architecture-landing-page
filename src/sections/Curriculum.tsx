@@ -63,7 +63,7 @@ export const Curriculum: React.FC<{}> = () => {
           </Paragraph>
         </Block>
         <Block>
-          <SubTitle>Pratique : application React</SubTitle>
+          <SubTitle>Pratique : application web</SubTitle>
           <Paragraph>
             Nous développerons ensemble{" "}
             <b>une application React en TypeScript avec NextJS en TDD</b> pour
@@ -74,7 +74,7 @@ export const Curriculum: React.FC<{}> = () => {
           </Paragraph>
         </Block>
         <Block>
-          <SubTitle>Pratique : application Nest</SubTitle>
+          <SubTitle>Pratique : application NodeJS</SubTitle>
           <Paragraph>
             Nous développerons ensemble{" "}
             <b>une application NestJS / TypeScript en TDD</b> reprenant les

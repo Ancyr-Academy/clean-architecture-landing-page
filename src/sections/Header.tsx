@@ -14,9 +14,9 @@ export const Header: React.FC<{}> = () => {
         </Text>
 
         <EarlyBird>
-          <h6>En promo à -70% !</h6>
+          <h6>Dernière semaine</h6>
           <p>
-            250€ au lieu de <s>830€</s>
+            à 250€ au lieu de <s>830€</s>
           </p>
         </EarlyBird>
       </Content>
@@ -67,7 +67,7 @@ const Text = styled.h1`
 
 const EarlyBird = styled.div`
   position: absolute;
-  right: -200px;
+  right: -100px;
   bottom: -50px;
 
   background-color: var(--early-bird-bg-color);
@@ -75,7 +75,7 @@ const EarlyBird = styled.div`
 
   padding-inline: 28px;
   padding-block: 20px;
-  max-width: 280px;
+  max-width: 360px;
 
   transform: rotateZ(7deg);
 

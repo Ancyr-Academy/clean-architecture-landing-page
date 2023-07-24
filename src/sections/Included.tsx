@@ -1,14 +1,41 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { styled } from "styled-components";
+import { endOfWeek } from "date-fns";
+
 import { Container } from "../components/Container";
 import { Paragraph } from "../components/Typography";
 import { getCourseURL } from "../../lib/app";
 import { breakpoints, mediaQuery } from "../../lib/global-styles";
 import { UnorderedList } from "@/components/Typography";
+import { Duration } from "../domain/duration";
+
+const endOfPromotion = endOfWeek(new Date());
+
+const secondsBeforeEndOfPromotion = () => {
+  const now = new Date();
+  const diff = endOfPromotion.getTime() - now.getTime();
+  return Math.floor(diff / 1000);
+};
 
 export const Included: React.FC<{}> = () => {
+  function delay(seconds: number) {
+    return new Duration(seconds).toString();
+  }
+
+  const [seconds, setSeconds] = React.useState(secondsBeforeEndOfPromotion());
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSeconds(secondsBeforeEndOfPromotion());
+    });
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
   return (
     <View>
       <Container variant="large">
@@ -45,7 +72,10 @@ export const Included: React.FC<{}> = () => {
               <b>Remboursé sans questions</b> si le contenu ne vous plait pas
               (30 jours après l'achat au plus tard). <br />
               <br />
-              <b>La promotion prend bientôt fin !</b>
+              <b>
+                Fin de la promotion dans
+                <br /> {delay(seconds)}
+              </b>
               <br />
               <br />
               <b>
@@ -53,7 +83,7 @@ export const Included: React.FC<{}> = () => {
                 <Price>250€ TTC</Price>
               </b>
               <br />
-              <i>Au lieu de 830€, soit -70%</i>
+              <i>Au lieu de 830€, soit -70% !</i>
             </JoinParagraph>
             <JoinButton href={getCourseURL()}>
               J'accède à la formation
