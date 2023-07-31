@@ -72,18 +72,12 @@ export const Included: React.FC<{}> = () => {
               <b>Remboursé sans questions</b> si le contenu ne vous plait pas
               (30 jours après l'achat au plus tard). <br />
               <br />
-              <b>
-                Fin de la promotion dans
-                <br /> {delay(seconds)}
-              </b>
               <br />
               <br />
               <b>
                 {" "}
-                <Price>250€ TTC</Price>
+                <Price>480€ TTC</Price>
               </b>
-              <br />
-              <i>Au lieu de 830€, soit -70% !</i>
             </JoinParagraph>
             <JoinButton href={getCourseURL()}>
               J'accède à la formation

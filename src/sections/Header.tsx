@@ -13,12 +13,12 @@ export const Header: React.FC<{}> = () => {
           <b>Clean Architecture</b>
         </Text>
 
-        <EarlyBird>
+        {/* <EarlyBird>
           <h6>Dernière semaine</h6>
           <p>
             à 250€ au lieu de <s>830€</s>
           </p>
-        </EarlyBird>
+        </EarlyBird> */}
       </Content>
     </View>
   );
