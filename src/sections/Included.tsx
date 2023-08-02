@@ -65,6 +65,20 @@ export const Included: React.FC<{}> = () => {
                 Un <b>accès anticipé</b> à mes futures formations
               </li>
             </UnorderedList>
+            <Paragraph style={{ color: "white" }}>
+              Vous débloquerez les modules suivant :<br />
+            </Paragraph>
+            <UnorderedList style={{ color: "white" }}>
+              <li>
+                <b>Module 1 :</b> Théorie de la Clean Architecture (5h)
+              </li>
+              <li>
+                <b>Module 2 :</b> Développement d'une app React (6h)
+              </li>
+              <li>
+                <b>Module 3 :</b> Développement d'une app NestJS (10h)
+              </li>
+            </UnorderedList>
           </TextColumn>
           <JoinColumn>
             <JoinTitle>Paiement possible en 3x & 6x sans frais</JoinTitle>
@@ -73,13 +87,12 @@ export const Included: React.FC<{}> = () => {
               (30 jours après l'achat au plus tard). <br />
               <br />
               <br />
-              <br />
               <b>
                 {" "}
                 <Price>300€ TTC</Price>
               </b>
               <br />
-              <i>Au lieu de 600€, soit -50% !</i>
+              <i>Au lieu de 600€, soit -50%</i>
             </JoinParagraph>
             <JoinButton href={getCourseURL()}>
               J'accède à la formation
@@ -117,7 +130,7 @@ const TextColumn = styled.div`
   }
 `;
 const JoinColumn = styled.div`
-  width: 700px;
+  width: 800px;
 
   padding-inline: 40px;
   padding-block: 40px;
