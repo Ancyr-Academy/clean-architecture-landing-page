@@ -2,7 +2,7 @@
 
 import React from "react";
 import { styled } from "styled-components";
-import { mediaQuery, breakpoints } from "../../lib/global-styles";
+import { breakpoints, mediaQuery } from "../../lib/global-styles";
 
 export const Header: React.FC<{}> = () => {
   return (
@@ -14,7 +14,7 @@ export const Header: React.FC<{}> = () => {
         </Text>
 
         <EarlyBird>
-          <h6>Accès Anticipé</h6>
+          <h6>Derniers jours</h6>
           <p>
             à 300€ au lieu de <s>600€</s>
           </p>

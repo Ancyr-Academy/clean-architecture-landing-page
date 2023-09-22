@@ -1,17 +1,17 @@
 "use client";
 
+import { endOfDay } from "date-fns";
 import React, { useEffect } from "react";
 import { styled } from "styled-components";
-import { endOfWeek } from "date-fns";
 
-import { Container } from "../components/Container";
-import { Paragraph } from "../components/Typography";
+import { UnorderedList } from "@/components/Typography";
 import { getCourseURL } from "../../lib/app";
 import { breakpoints, mediaQuery } from "../../lib/global-styles";
-import { UnorderedList } from "@/components/Typography";
+import { Container } from "../components/Container";
+import { Paragraph } from "../components/Typography";
 import { Duration } from "../domain/duration";
 
-const endOfPromotion = endOfWeek(new Date());
+const endOfPromotion = endOfDay(new Date("2023-09-30"));
 
 const secondsBeforeEndOfPromotion = () => {
   const now = new Date();
@@ -85,6 +85,11 @@ export const Included: React.FC<{}> = () => {
             <JoinParagraph>
               <b>Remboursé sans questions</b> si le contenu ne vous plait pas
               (30 jours après l'achat au plus tard). <br />
+              <br />
+              <b>
+                Fin de la promotion dans
+                <br /> {delay(seconds)}
+              </b>
               <br />
               <br />
               <b>
