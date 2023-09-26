@@ -14,6 +14,68 @@ export const Reviews: React.FC<{}> = () => {
         <Rows>
           <Review>
             <Paragraph>
+              J'ai eu le privilège de participer à la formation Clean
+              Architecture d'Anthony et{" "}
+              <b>je suis impressionné par la qualité et le contenu</b>. Cette
+              formation a dépassé toutes mes attentes et m'a fourni une
+              compréhension approfondie sur la façon d'architecturer une
+              application de manière cohérente.
+              <br />
+              <br />
+              Anthony a{" "}
+              <b>
+                une manière exceptionnelle de présenter des concepts complexes
+                de façon simple et compréhensible
+              </b>
+              . Chaque module est bien structuré, avec des explications
+              détaillées et des exemples concrets. C'est un expert dans le
+              domaine de la Clean Architecture et on le ressent.
+              <br />
+              <br />
+              Je recommande vivement cette formation à{" "}
+              <b>
+                tous les développeurs qui souhaitent améliorer leurs compétences
+                et créer des applications hautement maintenable et de qualité.
+              </b>{" "}
+              Merci encore pour cette expérience enrichissante !
+            </Paragraph>
+            <Author>Simon Potier</Author>
+
+            <ProfilePicture url={"/images/simonpotier.png"} />
+          </Review>
+          <Review>
+            <Paragraph>
+              Avant cette formation, je cherchais à améliorer la qualité et la
+              maintenabilité des architectures Front-end.{" "}
+              <b>
+                Cette formation a non seulement répondu à mes attentes, mais
+                elle les a même dépassées.
+              </b>
+              <br />
+              <br />
+              Anthony a pris le temps{" "}
+              <b>
+                d'expliquer en détail les fondements de la clean architecture
+              </b>{" "}
+              avant de la présenter, ce qui a rendu le contenu très accessible.
+              Les explications fournies étaient <b>claires et précises</b>, ce
+              qui m'a permis de comprendre le "pourquoi" derrière le "comment".
+              De plus, la cerise sur le gâteau a été le mini-projet pratique à
+              la fin, où j'ai pu voir de manière concrète{" "}
+              <b>les avantages qu'une telle architecture peut apporter.</b>
+              <br />
+              <br />
+              En résumé, cette formation a été extrêmement enrichissante et m'a
+              permis de consolider mes connaissances en clean architecture.{" "}
+              <b>
+                Je la recommande vivement à quiconque souhaite améliorer ses
+                compétences en matière d'architecture Front-end.
+              </b>
+            </Paragraph>
+            <Author>Chaka</Author>
+          </Review>
+          <Review>
+            <Paragraph>
               Je conseil fortement la formation d'Anthony.{" "}
               <b>Elle convient a tous, debutant et confirmé</b>. Anthony prend
               le temps d'expliquer toute la theorie autour de la clean
@@ -121,37 +183,6 @@ export const Reviews: React.FC<{}> = () => {
             </Author>
 
             <ProfilePicture url={"/images/theodepelsmacker.jpeg"} />
-          </Review>
-          <Review>
-            <Paragraph>
-              J'ai eu le privilège de participer à la formation Clean
-              Architecture d'Anthony et{" "}
-              <b>je suis impressionné par la qualité et le contenu</b>. Cette
-              formation a dépassé toutes mes attentes et m'a fourni une
-              compréhension approfondie sur la façon d'architecturer une
-              application de manière cohérente.
-              <br />
-              <br />
-              Anthony a{" "}
-              <b>
-                une manière exceptionnelle de présenter des concepts complexes
-                de façon simple et compréhensible
-              </b>
-              . Chaque module est bien structuré, avec des explications
-              détaillées et des exemples concrets. C'est un expert dans le
-              domaine de la Clean Architecture et on le ressent.
-              <br />
-              <br />
-              Je recommande vivement cette formation à{" "}
-              <b>
-                tous les développeurs qui souhaitent améliorer leurs compétences
-                et créer des applications hautement maintenable et de qualité.
-              </b>{" "}
-              Merci encore pour cette expérience enrichissante !
-            </Paragraph>
-            <Author>Simon Potier</Author>
-
-            <ProfilePicture url={"/images/simonpotier.png"} />
           </Review>
         </Rows>
       </Container>
