@@ -2,9 +2,9 @@
 
 import React from "react";
 import { styled } from "styled-components";
+import { breakpoints, mediaQuery } from "../../lib/global-styles";
 import { Container } from "../components/Container";
 import { Paragraph } from "../components/Typography";
-import { breakpoints, mediaQuery } from "../../lib/global-styles";
 
 export const Reviews: React.FC<{}> = () => {
   return (
@@ -45,7 +45,7 @@ export const Reviews: React.FC<{}> = () => {
                 il est également toujours là pour nous répondre lorsqu'on a des
                 questions
               </b>
-              , ce qui permet d’avancer plus vite et de mieux comprendre les
+              , ce qui permet d'avancer plus vite et de mieux comprendre les
               concepts !
             </Paragraph>
             <Author
@@ -121,6 +121,37 @@ export const Reviews: React.FC<{}> = () => {
             </Author>
 
             <ProfilePicture url={"/images/theodepelsmacker.jpeg"} />
+          </Review>
+          <Review>
+            <Paragraph>
+              J'ai eu le privilège de participer à la formation Clean
+              Architecture d'Anthony et{" "}
+              <b>je suis impressionné par la qualité et le contenu</b>. Cette
+              formation a dépassé toutes mes attentes et m'a fourni une
+              compréhension approfondie sur la façon d'architecturer une
+              application de manière cohérente.
+              <br />
+              <br />
+              Anthony a{" "}
+              <b>
+                une manière exceptionnelle de présenter des concepts complexes
+                de façon simple et compréhensible
+              </b>
+              . Chaque module est bien structuré, avec des explications
+              détaillées et des exemples concrets. C'est un expert dans le
+              domaine de la Clean Architecture et on le ressent.
+              <br />
+              <br />
+              Je recommande vivement cette formation à{" "}
+              <b>
+                tous les développeurs qui souhaitent améliorer leurs compétences
+                et créer des applications hautement maintenable et de qualité.
+              </b>{" "}
+              Merci encore pour cette expérience enrichissante !
+            </Paragraph>
+            <Author>Simon Potier</Author>
+
+            <ProfilePicture url={"/images/simonpotier.png"} />
           </Review>
         </Rows>
       </Container>
