@@ -1,7 +1,6 @@
 "use client";
 
-import { endOfDay } from "date-fns";
-import React, { useEffect } from "react";
+import React from "react";
 import { styled } from "styled-components";
 
 import { UnorderedList } from "@/components/Typography";
@@ -10,31 +9,14 @@ import { breakpoints, mediaQuery } from "../../lib/global-styles";
 import { Container } from "../components/Container";
 import { Paragraph } from "../components/Typography";
 import { Duration } from "../domain/duration";
-
-const endOfPromotion = endOfDay(new Date("2023-09-30"));
-
-const secondsBeforeEndOfPromotion = () => {
-  const now = new Date();
-  const diff = endOfPromotion.getTime() - now.getTime();
-  return Math.floor(diff / 1000);
-};
+import { useDelay } from "../hooks/use-delay";
 
 export const Included: React.FC<{}> = () => {
   function delay(seconds: number) {
     return new Duration(seconds).toString();
   }
 
-  const [seconds, setSeconds] = React.useState(secondsBeforeEndOfPromotion());
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setSeconds(secondsBeforeEndOfPromotion());
-    });
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
+  const seconds = useDelay();
 
   return (
     <View>
@@ -88,7 +70,7 @@ export const Included: React.FC<{}> = () => {
               <br />
               <b>
                 Fin de la promotion dans
-                <br /> {delay(seconds)}
+                <br /> {seconds}
               </b>
               <br />
               <br />

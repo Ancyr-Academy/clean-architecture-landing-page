@@ -3,8 +3,11 @@
 import React from "react";
 import { styled } from "styled-components";
 import { breakpoints, mediaQuery } from "../../lib/global-styles";
+import { useDelay } from "../hooks/use-delay";
 
 export const Header: React.FC<{}> = () => {
+  const seconds = useDelay();
+
   return (
     <View>
       <Content>
@@ -14,10 +17,8 @@ export const Header: React.FC<{}> = () => {
         </Text>
 
         <EarlyBird>
-          <h6>Derniers jours</h6>
-          <p>
-            à 300€ au lieu de <s>600€</s>
-          </p>
+          <h6>Fin de la promotion</h6>
+          <p>dans {seconds}</p>
         </EarlyBird>
       </Content>
     </View>
@@ -75,7 +76,7 @@ const EarlyBird = styled.div`
 
   padding-inline: 28px;
   padding-block: 20px;
-  max-width: 360px;
+  max-width: 460px;
 
   transform: rotateZ(7deg);
 

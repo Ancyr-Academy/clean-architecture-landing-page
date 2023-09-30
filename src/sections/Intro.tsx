@@ -1,8 +1,8 @@
 "use client";
 
+import { Container } from "@/components/Container";
 import React from "react";
 import { styled } from "styled-components";
-import { Container } from "@/components/Container";
 import { Paragraph, Title, UnorderedList } from "../components/Typography";
 
 export const Intro: React.FC<{}> = () => {
@@ -38,7 +38,7 @@ export const Intro: React.FC<{}> = () => {
             nouvelles fonctionnalités.
             <br />
             <br />
-            C'est votre patron qui va être content.
+            C'est votre boss qui va être content :)
           </Paragraph>
         </Container>
       </Block>

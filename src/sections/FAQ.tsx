@@ -2,10 +2,10 @@
 
 import React from "react";
 import { styled } from "styled-components";
-import { Container } from "../components/Container";
-import { Paragraph } from "../components/Typography";
 import { getCourseURL } from "../../lib/app";
 import { breakpoints, mediaQuery } from "../../lib/global-styles";
+import { Container } from "../components/Container";
+import { Paragraph } from "../components/Typography";
 
 export const FAQ: React.FC<{}> = () => {
   return (
@@ -57,7 +57,7 @@ export const FAQ: React.FC<{}> = () => {
                 questions{" "}
               </b>
               sur mon Discord, une communauté qui rassemble plus de{" "}
-              <b>800 développeurs</b> sensibilisés à la qualité dans
+              <b>1000 développeurs</b> sensibilisés à la qualité dans
               l'ingénierie logicielle.
             </Answer>
           </QuestionBlock>
