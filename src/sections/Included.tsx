@@ -8,14 +8,9 @@ import { getCourseURL } from "../../lib/app";
 import { breakpoints, mediaQuery } from "../../lib/global-styles";
 import { Container } from "../components/Container";
 import { Paragraph } from "../components/Typography";
-import { Duration } from "../domain/duration";
 import { useDelay } from "../hooks/use-delay";
 
 export const Included: React.FC<{}> = () => {
-  function delay(seconds: number) {
-    return new Duration(seconds).toString();
-  }
-
   const seconds = useDelay();
 
   return (
@@ -63,23 +58,23 @@ export const Included: React.FC<{}> = () => {
             </UnorderedList>
           </TextColumn>
           <JoinColumn>
-            <JoinTitle>Paiement possible en 3x & 6x sans frais</JoinTitle>
+            <JoinTitle>Paiement possible en 2x ou 3x</JoinTitle>
             <JoinParagraph>
               <b>Remboursé sans questions</b> si le contenu ne vous plait pas
               (30 jours après l'achat au plus tard). <br />
               <br />
-              <b>
+              {/* <b>
                 Fin de la promotion dans
                 <br /> {seconds}
               </b>
-              <br />
+              <br /> */}
               <br />
               <b>
                 {" "}
-                <Price>300€ TTC</Price>
+                <Price>600€ TTC</Price>
               </b>
-              <br />
-              <i>Au lieu de 600€, soit -50%</i>
+              {/* <br />
+              <i>Au lieu de 600€, soit -50%</i> */}
             </JoinParagraph>
             <JoinButton href={getCourseURL()}>
               J'accède à la formation
