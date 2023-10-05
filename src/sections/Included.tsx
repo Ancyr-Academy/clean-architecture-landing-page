@@ -53,7 +53,7 @@ export const Included: React.FC<{}> = () => {
                 <b>Module 2 :</b> Développement d'une app React (6h)
               </li>
               <li>
-                <b>Module 3 :</b> Développement d'une app NestJS (10h)
+                <b>Module 3 :</b> Développement d'une app NestJS (8h)
               </li>
             </UnorderedList>
           </TextColumn>
@@ -68,13 +68,13 @@ export const Included: React.FC<{}> = () => {
                 <br /> {seconds}
               </b>
               <br /> */}
-              <br />
+              {/* <br /> */}
               <b>
                 {" "}
-                <Price>600€ TTC</Price>
+                <Price>400€ TTC</Price>
               </b>
-              {/* <br />
-              <i>Au lieu de 600€, soit -50%</i> */}
+              <br />
+              <i>Au lieu de 600€, soit -33%</i>
             </JoinParagraph>
             <JoinButton href={getCourseURL()}>
               J'accède à la formation
