@@ -71,10 +71,10 @@ export const Included: React.FC<{}> = () => {
               {/* <br /> */}
               <b>
                 {" "}
-                <Price>400€ TTC</Price>
+                <Price>300€ TTC</Price>
               </b>
               <br />
-              <i>Au lieu de 600€, soit -33%</i>
+              <i>Valeur réelle de 600€</i>
             </JoinParagraph>
             <JoinButton href={getCourseURL()}>
               J'accède à la formation
