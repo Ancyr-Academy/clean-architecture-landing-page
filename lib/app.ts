@@ -1,2 +1,2 @@
 export const getCourseURL = () =>
-  "https://academy.ancyr.fr/p/clean-architecture";
+  "https://courses.ancyracademy.fr/p/clean-architecture";
