@@ -2,14 +2,14 @@
 
 import React from "react";
 import { styled } from "styled-components";
-import { Container } from "../components/Container";
 import { breakpoints, mediaQuery } from "../../lib/global-styles";
+import { Container } from "../components/Container";
 
 export const Curriculum: React.FC<{}> = () => {
   return (
     <View>
       <Container>
-        <Title>Curriculum</Title>
+        <Title>Au Programme</Title>
         <Block>
           <SubTitle>Les paradigmes de programmation</SubTitle>
           <Paragraph>

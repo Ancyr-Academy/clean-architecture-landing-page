@@ -5,6 +5,12 @@ export class Duration {
     let seconds = this.seconds;
     let minutes = 0;
     let hours = 0;
+    let days = 0;
+
+    days = Math.floor(seconds / 86400);
+    if (days > 0) {
+      return `${days} jours`;
+    }
 
     if (seconds >= 3600) {
       hours = Math.floor(seconds / 3600);
@@ -16,7 +22,9 @@ export class Duration {
       seconds = seconds - minutes * 60;
     }
 
-    return `${this.pad(hours)}h ${this.pad(minutes)}m ${this.pad(seconds)}s`;
+    return `${days}j ${this.pad(hours)}h ${this.pad(minutes)}m ${this.pad(
+      seconds
+    )}s`;
   }
 
   private pad(number: number): string {

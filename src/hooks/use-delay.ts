@@ -2,7 +2,7 @@ import { Duration } from "@/domain/duration";
 import { endOfDay } from "date-fns";
 import { useEffect, useState } from "react";
 
-const endOfPromotion = endOfDay(new Date());
+const endOfPromotion = endOfDay(new Date("2023-10-31"));
 
 const secondsBeforeEndOfPromotion = () => {
   const now = new Date();
