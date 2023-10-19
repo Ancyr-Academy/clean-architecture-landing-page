@@ -18,7 +18,9 @@ export const Header: React.FC<{}> = () => {
 
         <EarlyBird>
           <h6>Formation à -25%</h6>
-          <p>pendant {seconds}</p>
+          <p>
+            pendant {seconds} avec le code <b>TWENTYFIVE</b>
+          </p>
         </EarlyBird>
       </Content>
     </View>
@@ -68,7 +70,7 @@ const Text = styled.h1`
 
 const EarlyBird = styled.div`
   position: absolute;
-  right: -100px;
+  right: -200px;
   bottom: -50px;
 
   background-color: var(--early-bird-bg-color);
@@ -91,6 +93,10 @@ const EarlyBird = styled.div`
 
     font-size: var(--early-bird-text-fs);
     text-align: center;
+    line-height: 1.2;
+  }
+  b {
+    color: yellow;
   }
 
   ${mediaQuery(1500)} {

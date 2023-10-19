@@ -8,11 +8,8 @@ import { getCourseURL } from "../../lib/app";
 import { breakpoints, mediaQuery } from "../../lib/global-styles";
 import { Container } from "../components/Container";
 import { Paragraph } from "../components/Typography";
-import { useDelay } from "../hooks/use-delay";
 
 export const Included: React.FC<{}> = () => {
-  const seconds = useDelay();
-
   return (
     <View>
       <Container variant="large">
@@ -64,17 +61,18 @@ export const Included: React.FC<{}> = () => {
               (30 jours après l'achat au plus tard). <br />
               <br />
               <b>
-                Fin de la promotion dans
-                <br /> {seconds}
+                <Price>300€ TTC</Price>
+                <br />
               </b>
-              <br />
+              <i>Au lieu de 400€ soit -25%</i>
               <br />
               <b>
-                {" "}
-                <Price>300€ TTC</Price>
+                <br />
+                <Code>
+                  Avec le code <b>TWENTYFIVE</b>
+                </Code>
               </b>
               <br />
-              <i>Au lieu de 400€ soit -25%</i>
             </JoinParagraph>
             <JoinButton href={getCourseURL()}>
               J'accède à la formation
@@ -164,5 +162,14 @@ const JoinButton = styled.a`
 
 const Price = styled.span`
   font-size: var(--fs-very-big);
+  line-height: 1.2;
+`;
+
+const Code = styled.span`
+  font-size: var(--fs-big);
   line-height: 1;
+
+  b {
+    color: yellow;
+  }
 `;
