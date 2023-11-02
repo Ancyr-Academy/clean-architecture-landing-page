@@ -16,12 +16,12 @@ export const Header: React.FC<{}> = () => {
           <b>Clean Architecture</b>
         </Text>
 
-        <EarlyBird>
+        {/* <EarlyBird>
           <h6>Formation à -25%</h6>
           <p>
             pendant {seconds} avec le code <b>TWENTYFIVE</b>
           </p>
-        </EarlyBird>
+        </EarlyBird> */}
       </Content>
     </View>
   );
