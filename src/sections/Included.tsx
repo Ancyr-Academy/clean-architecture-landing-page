@@ -3,11 +3,10 @@
 import React from "react";
 import { styled } from "styled-components";
 
-import { UnorderedList } from "@/components/Typography";
+import { Container } from "@/components/Container";
+import { Paragraph, UnorderedList } from "@/components/Typography";
 import { getCourseURL } from "../../lib/app";
 import { breakpoints, mediaQuery } from "../../lib/global-styles";
-import { Container } from "../components/Container";
-import { Paragraph } from "../components/Typography";
 
 export const Included: React.FC<{}> = () => {
   return (
@@ -61,7 +60,7 @@ export const Included: React.FC<{}> = () => {
               (30 jours après l'achat au plus tard). <br />
               <br />
               <b>
-                <Price>400€ TTC</Price>
+                <Price>300€ TTC</Price>
                 <br />
               </b>
               {/* <i>Au lieu de 400€ soit -25%</i>
