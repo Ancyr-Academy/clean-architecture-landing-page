@@ -1,33 +1,39 @@
 export class Duration {
-  constructor(private seconds: number) {}
+  public readonly days: number = 0;
+  public readonly hours: number = 0;
+  public readonly minutes: number = 0;
+  public readonly seconds: number = 0;
 
-  toString(): string {
-    let seconds = this.seconds;
-    let minutes = 0;
-    let hours = 0;
-    let days = 0;
+  constructor(private total: number) {
+    this.seconds = this.total;
 
-    days = Math.floor(seconds / 86400);
-    if (days > 0) {
-      return `${days} jours`;
+    if (this.seconds > 86400) {
+      this.days = Math.floor(this.seconds / 86400);
+      this.seconds = this.seconds - this.days * 86400;
     }
 
-    if (seconds >= 3600) {
-      hours = Math.floor(seconds / 3600);
-      seconds = seconds - hours * 3600;
+    if (this.seconds >= 3600) {
+      this.hours = Math.floor(this.seconds / 3600);
+      this.seconds = this.seconds - this.hours * 3600;
     }
 
-    if (seconds >= 60) {
-      minutes = Math.floor(seconds / 60);
-      seconds = seconds - minutes * 60;
+    if (this.seconds >= 60) {
+      this.minutes = Math.floor(this.seconds / 60);
+      this.seconds = this.seconds - this.minutes * 60;
     }
-
-    return `${days}j ${this.pad(hours)}h ${this.pad(minutes)}m ${this.pad(
-      seconds
-    )}s`;
   }
 
-  private pad(number: number): string {
+  toString(): string {
+    if (this.days > 0) {
+      return `${this.days} jours`;
+    }
+
+    return `${this.days}j ${this.pad(this.hours)}h ${this.pad(
+      this.minutes
+    )}m ${this.pad(this.seconds)}s`;
+  }
+
+  pad(number: number): string {
     return number.toString().padStart(2, "0");
   }
 }

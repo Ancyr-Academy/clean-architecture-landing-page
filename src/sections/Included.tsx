@@ -60,17 +60,17 @@ export const Included: React.FC<{}> = () => {
               (30 jours après l'achat au plus tard). <br />
               <br />
               <b>
-                <Price>300€ TTC</Price>
+                <Price>120€ TTC</Price>
                 <br />
               </b>
-              {/* <i>Au lieu de 400€ soit -25%</i>
+              <i>Au lieu de 300€ soit -60%</i>
               <br />
               <b>
                 <br />
                 <Code>
-                  Avec le code <b>TWENTYFIVE</b>
+                  Avec le code <b>BLACKFRIDAY</b>
                 </Code>
-              </b> */}
+              </b>
               <br />
             </JoinParagraph>
             <JoinButton href={getCourseURL()}>

@@ -3,7 +3,7 @@ import { endOfDay } from "date-fns";
 import { useEffect, useState } from "react";
 import { secondsBeforeEndOfPromotion } from "../domain/promotion";
 
-export const useDelay = () => {
+export const useDuration = () => {
   const [seconds, setSeconds] = useState(secondsBeforeEndOfPromotion());
 
   useEffect(() => {
@@ -16,5 +16,5 @@ export const useDelay = () => {
     };
   }, []);
 
-  return new Duration(seconds).toString();
+  return new Duration(seconds);
 };

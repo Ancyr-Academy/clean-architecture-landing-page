@@ -2,28 +2,24 @@
 
 import React from "react";
 import { styled } from "styled-components";
-import { breakpoints, mediaQuery } from "../../lib/global-styles";
 import { useDelay } from "../hooks/use-delay";
+import { Promotion } from "./Promotion";
 
 export const Header: React.FC<{}> = () => {
   const seconds = useDelay();
 
   return (
-    <View>
-      <Content>
-        <Text>
-          Des Applications Robustes et Scalable avec la <br />
-          <b>Clean Architecture</b>
-        </Text>
-
-        {/* <EarlyBird>
-          <h6>Formation à -25%</h6>
-          <p>
-            pendant {seconds} avec le code <b>TWENTYFIVE</b>
-          </p>
-        </EarlyBird> */}
-      </Content>
-    </View>
+    <>
+      <View>
+        <Content>
+          <Text>
+            Des Applications Robustes et Scalable avec la <br />
+            <b>Clean Architecture</b>
+          </Text>
+        </Content>
+      </View>
+      <Promotion></Promotion>
+    </>
   );
 };
 
@@ -65,49 +61,5 @@ const Text = styled.h1`
 
   b {
     font-weight: 800;
-  }
-`;
-
-const EarlyBird = styled.div`
-  position: absolute;
-  right: -200px;
-  bottom: -50px;
-
-  background-color: var(--early-bird-bg-color);
-  color: var(--early-bird-text-color);
-
-  padding-inline: 28px;
-  padding-block: 20px;
-  max-width: 460px;
-
-  transform: rotateZ(7deg);
-
-  h6 {
-    margin: 0;
-    font-size: var(--early-bird-title-fs);
-    text-align: center;
-  }
-  p {
-    margin: 0;
-    margin-top: 8px;
-
-    font-size: var(--early-bird-text-fs);
-    text-align: center;
-    line-height: 1.2;
-  }
-  b {
-    color: yellow;
-  }
-
-  ${mediaQuery(1500)} {
-    right: -100px;
-  }
-  ${mediaQuery(1285)} {
-    right: 50px;
-  }
-
-  ${mediaQuery(breakpoints.phone)} {
-    padding-inline: 4px;
-    padding-block: 12px;
   }
 `;
