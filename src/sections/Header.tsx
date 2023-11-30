@@ -3,7 +3,6 @@
 import React from "react";
 import { styled } from "styled-components";
 import { useDelay } from "../hooks/use-delay";
-import { Promotion } from "./Promotion";
 
 export const Header: React.FC<{}> = () => {
   const seconds = useDelay();
@@ -18,7 +17,6 @@ export const Header: React.FC<{}> = () => {
           </Text>
         </Content>
       </View>
-      <Promotion></Promotion>
     </>
   );
 };
