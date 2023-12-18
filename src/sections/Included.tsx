@@ -20,7 +20,7 @@ export const Included: React.FC<{}> = () => {
             </Paragraph>
             <UnorderedList style={{ color: "white" }}>
               <li>
-                Un <b>accès à vie</b> à la formation
+                Un <b>accès illimité et à vie</b> à la formation ainsi qu'aux cours à venir dans divers environnements (JVM, .NET, Python...)
               </li>
               <li>
                 Des <b>mises à jour gratuites</b> qui viendront étoffer ou
@@ -60,10 +60,10 @@ export const Included: React.FC<{}> = () => {
               (30 jours après l'achat au plus tard). <br />
               <br />
               <b>
-                <Price>120€ TTC</Price>
+                <Price>210€ TTC</Price>
                 <br />
               </b>
-              <i>Au lieu de 300€ soit -60%</i>
+              <i>Au lieu de 300€ soit -30%</i>
               <br />
               <b>
                 <br />
