@@ -15,7 +15,7 @@ export const Promotion: React.FC<{}> = () => {
           <Left>
             <Title>PROMOTION</Title>
             <Content>
-              Jusqu'à -60% avec le code <b>BLACKFRIDAY</b>
+              Jusqu'à <b>-30%</b> avec le code <b>NOEL2023</b>
             </Content>
           </Left>
           <Right>
@@ -51,7 +51,7 @@ export const Promotion: React.FC<{}> = () => {
 };
 
 const View = styled.div`
-  background-color: #171717;
+  background-color: #b40404;
 `;
 
 const SubView = styled.div`
@@ -67,7 +67,7 @@ const Left = styled.div``;
 const Right = styled.div``;
 
 const Title = styled.h2`
-  color: var(--color-secondary);
+  color: white;
   font-size: var(--fs-medium);
 
   margin: 0;
@@ -76,7 +76,7 @@ const Title = styled.h2`
 const Content = styled.div`
   margin-top: 4px;
 
-  color: #9dd100;
+  color: #fff1f1;
   font-size: var(--fs-medium);
 
   max-width: 350px;
@@ -97,11 +97,10 @@ const Countdown = styled.div`
 `;
 
 const CountdownNumber = styled.div`
-  color: var(--color-secondary);
   font-size: var(--fs-medium);
 
-  background-color: #88b502;
-  color: white;
+  background-color: #fff3f3;
+  color: #b40404;
 
   padding-inline: 20px;
   padding-block: 8px;

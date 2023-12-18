@@ -60,8 +60,18 @@ export const Included: React.FC<{}> = () => {
               (30 jours après l'achat au plus tard). <br />
               <br />
               <b>
-                <Price>300€ TTC</Price>
+                <Price>120€ TTC</Price>
+                <br />
               </b>
+              <i>Au lieu de 300€ soit -60%</i>
+              <br />
+              <b>
+                <br />
+                <Code>
+                  Avec le code <b>NOEL2023</b>
+                </Code>
+              </b>
+              <br />
             </JoinParagraph>
             <JoinButton href={getCourseURL()}>
               J'accède à la formation
@@ -159,6 +169,6 @@ const Code = styled.span`
   line-height: 1;
 
   b {
-    color: yellow;
+    color: #fc9494;
   }
 `;

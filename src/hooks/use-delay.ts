@@ -18,3 +18,19 @@ export const useDelay = () => {
 
   return new Duration(seconds).toString();
 };
+
+export const useIsPromotionActive = () => {
+  const [seconds, setSeconds] = useState(secondsBeforeEndOfPromotion());
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSeconds(secondsBeforeEndOfPromotion());
+    });
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
+  return seconds > 0;
+}
