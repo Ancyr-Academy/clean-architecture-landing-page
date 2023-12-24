@@ -1,6 +1,4 @@
-import { endOfDay } from "date-fns";
-
-const endOfPromotion = endOfDay(new Date("2023-12-25T00:00:00"));
+import { endOfPromotion } from "../../lib/app";
 
 export const secondsBeforeEndOfPromotion = () => {
   const now = new Date();
