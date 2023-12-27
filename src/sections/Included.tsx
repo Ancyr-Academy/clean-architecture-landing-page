@@ -60,18 +60,18 @@ export const Included: React.FC<{}> = () => {
               (30 jours après l'achat au plus tard). <br />
               <br />
               <b>
-                <Price>210€ TTC</Price>
+                <Price>300€ TTC</Price>
                 <br />
               </b>
-              <i>Au lieu de 300€ soit -30%</i>
-              <br />
-              <b>
-                <br />
-                <Code>
-                  Avec le code <b>NOEL2023</b>
-                </Code>
-              </b>
-              <br />
+              {/*<i>Au lieu de 300€ soit -30%</i>*/}
+              {/*<br />*/}
+              {/*<b>*/}
+              {/*  <br />*/}
+              {/*  <Code>*/}
+              {/*    Avec le code <b>NOEL2023</b>*/}
+              {/*  </Code>*/}
+              {/*</b>*/}
+              {/*<br />*/}
             </JoinParagraph>
             <JoinButton href={getCourseURL()}>
               J'accède à la formation
