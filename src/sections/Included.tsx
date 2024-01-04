@@ -5,7 +5,7 @@ import { styled } from "styled-components";
 
 import { Container } from "@/components/Container";
 import { Paragraph, UnorderedList } from "@/components/Typography";
-import { getCourseURL } from "../../lib/app";
+import {code, getCourseURL, isInPromotion, percentage} from "../../lib/app";
 import { breakpoints, mediaQuery } from "../../lib/global-styles";
 
 export const Included: React.FC<{}> = () => {
@@ -53,30 +53,49 @@ export const Included: React.FC<{}> = () => {
               </li>
             </UnorderedList>
           </TextColumn>
-          <JoinColumn>
-            <JoinTitle>Paiement possible en 2x ou 3x</JoinTitle>
-            <JoinParagraph>
-              <b>Remboursé sans questions</b> si le contenu ne vous plait pas
-              (30 jours après l'achat au plus tard). <br />
-              <br />
-              <b>
-                <Price>300€ TTC</Price>
-                <br />
-              </b>
-              {/*<i>Au lieu de 300€ soit -30%</i>*/}
-              {/*<br />*/}
-              {/*<b>*/}
-              {/*  <br />*/}
-              {/*  <Code>*/}
-              {/*    Avec le code <b>NOEL2023</b>*/}
-              {/*  </Code>*/}
-              {/*</b>*/}
-              {/*<br />*/}
-            </JoinParagraph>
-            <JoinButton href={getCourseURL()}>
-              J'accède à la formation
-            </JoinButton>
-          </JoinColumn>
+          {isInPromotion() ? (
+              <JoinColumn>
+                <JoinTitle>Paiement possible en 2x ou 3x</JoinTitle>
+                <JoinParagraph>
+                  <b>Remboursé sans questions</b> si le contenu ne vous plait pas
+                  (30 jours après l'achat au plus tard). <br />
+                  <br />
+                  <b>
+                    <Price>{300 * (1 - percentage)} TTC</Price>
+                    <br />
+                  </b>
+                  <i>Au lieu de 300€ soit -{percentage * 100}%</i>
+                  <br />
+                  <b>
+                    <br />
+                    <Code>
+                      Avec le code <b>{code}</b>
+                    </Code>
+                  </b>
+                  <br />
+                </JoinParagraph>
+                <JoinButton href={getCourseURL()}>
+                  J'accède à la formation
+                </JoinButton>
+              </JoinColumn>
+          ) : (
+              <JoinColumn>
+                <JoinTitle>Paiement possible en 2x ou 3x</JoinTitle>
+                <JoinParagraph>
+                  <b>Remboursé sans questions</b> si le contenu ne vous plait pas
+                  (30 jours après l'achat au plus tard). <br />
+                  <br />
+                  <b>
+                    <Price>180€ TTC</Price>
+                    <br />
+                  </b>
+                </JoinParagraph>
+                <JoinButton href={getCourseURL()}>
+                  J'accède à la formation
+                </JoinButton>
+              </JoinColumn>
+          )}
+
         </Rows>
       </Container>
     </View>

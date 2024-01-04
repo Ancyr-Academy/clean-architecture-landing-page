@@ -4,6 +4,7 @@ import React from "react";
 import { styled } from "styled-components";
 import { Container } from "../components/Container";
 import { useDuration } from "../hooks/use-duration";
+import {code, percentage} from "../../lib/app";
 
 export const Promotion: React.FC<{}> = () => {
   const duration = useDuration();
@@ -15,7 +16,7 @@ export const Promotion: React.FC<{}> = () => {
           <Left>
             <Title>PROMOTION</Title>
             <Content>
-              Jusqu'à <b>-30%</b> avec le code <b>NOEL2023</b>
+              Jusqu'à <b>-{percentage * 100}%</b> avec le code <b>{code}</b>
             </Content>
           </Left>
           <Right>
